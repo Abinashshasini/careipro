@@ -1,5 +1,11 @@
 import React from 'react';
-import {StyleSheet, SafeAreaView, View, TouchableOpacity} from 'react-native';
+import {
+  StyleSheet,
+  SafeAreaView,
+  View,
+  TouchableOpacity,
+  Linking,
+} from 'react-native';
 import colors from '../utils/colors';
 
 import Loader from './Loader';
@@ -11,6 +17,7 @@ import Iconicons from 'react-native-vector-icons/Ionicons';
 function Screen({children, style}) {
   // const loading = useSelector(state => state.loading.loading);
   const loading = false;
+  const phoneNumber = '7749012570';
 
   return (
     <SafeAreaView style={[styles.screen, style]}>
@@ -18,7 +25,10 @@ function Screen({children, style}) {
         {loading && <Loader />}
         {children}
         <View style={StyleSheet.absoluteFill}>
-          <TouchableOpacity style={styles.helpContainer} activeOpacity={0.9}>
+          <TouchableOpacity
+            style={styles.helpContainer}
+            activeOpacity={0.9}
+            onPress={() => Linking.openURL(`tel:${phoneNumber}`)}>
             <Text style={styles.text}>
               <Iconicons name="call" />
               Need Help ?

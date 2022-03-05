@@ -1,12 +1,9 @@
 export default {
   default: '#172b4d',
-  primary: '#168388',
-  secondary: 'rgb(210, 12, 85)',
+
   black: '#000',
   whiteShade: '#f7f1ff',
   light: '#f8f4f4',
-  lightGrey: '#c7c7c7',
-  info: '#11cdef',
   success: '#4caf50',
   danger: '#f5365c',
   warning: '#ED6C02',
@@ -18,12 +15,16 @@ export default {
   purpleSecondary: '#7d67f9',
 
   //
+  primary: '#168388',
+  secondary: 'rgb(210, 12, 85)',
   buttonPrimary: '#373A4E',
   textPrimary: '#FEB800',
   textLight: '#1A191D',
   textBlack: '#16151B',
   greyPrimary: '#9c9ea1',
+  lightGrey: '#414e5a',
   lightDark: '#16151B',
   background: '#f8f8f8',
   white: '#fff',
+  info: '#0076d7',
 };

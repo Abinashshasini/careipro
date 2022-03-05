@@ -36,6 +36,8 @@ const HomeScreen = props => {
         showsVerticalScrollIndicator={false}
         numColumns={4}
         horizontal={false}
+        contentContainerStyle={{flexGrow: 1}}
+        ListFooterComponentStyle={{flex: 1}}
         ListFooterComponent={
           <View>
             <Features />

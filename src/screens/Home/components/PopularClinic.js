@@ -14,7 +14,7 @@ import colors from '../../../utils/colors';
 const PopularClinic = props => {
   return (
     <View style={styles.container}>
-      <View style={{flexDirection: 'row'}}>
+      <View style={{flexDirection: 'row', marginVertical: 7}}>
         <Text style={styles.brandText}>Popular Clinic</Text>
         <EntypoIcon
           name="chevron-small-right"
@@ -58,11 +58,13 @@ const styles = StyleSheet.create({
   },
 
   wrapper: {
-    width: 130,
+    width: 132,
     marginRight: 10,
-    borderRadius: 4,
     backgroundColor: colors.white,
-    elevation: 1,
+    borderRadius: 6,
+    borderColor: '#e4eaef',
+    borderWidth: 1,
+    borderStyle: 'solid',
     marginBottom: 5,
   },
 
